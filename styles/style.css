@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #F3F5FC;
+    
+}
+.main {
+    display: grid;
+    
+    grid-template-areas: "logo         logo              resultado "
+                         " principal   principal         resultado "
+                         " secundario   secundario         resultado"
+                         " footer         footer            footer";
+                                               
+    
+}
+.header{
+    grid-area: logo;
+}
+.logoalura{
+    padding: 40px 32px ;
+}
+#principal{ 
+    
+
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+ }
+#principal .contenedor_texto{
+     display: flex;
+     flex-direction: column;
+     margin-left: 24%;
+     margin-right: 8%;
+    
+     
+     
+     
+}
+#principal .contenedor_texto .text-area {
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    resize: none;
+    
+    
+}
+   
+    
+
+::placeholder { color: #0A3871;; }
+
+
+
+#principal_secundario{
+    grid-area: secundario;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 24%;
+   
+}
+
+#principal_secundario .informacion{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 8px;
+}
+
+
+#principal_secundario .botones {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+    margin-right: 2.5%;
+}
+
+
+#principal_secundario .botones .btn-encriptar{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    border-radius: 24px;
+    padding: 24px ;
+    background-color: #0A3871;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    text-align: center;
+    
+}
+#principal_secundario .botones .btn-desencriptar{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 50%; 
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    text-align: center;
+}
+
+
+
+
+
+#principal_secundario .botones .btn-encriptar:hover {
+    background-color: rgb(131, 104, 104);
+    scale: 1.05;
+    transition: all 0.15s;
+  }
+  #principal_secundario .botones .btn-desencriptar:hover {
+    background-color: rgb(131, 104, 104);
+    scale: 1.05;
+    transition: all 0.15s;
+  }
+
+
+
+
+
+
+
+
+
+
+.resultado{
+    background-color: white;
+    border: white solid 2px ;
+    border-radius: 32px;
+    grid-area: resultado;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+   
+     
+    
+
+.resultado .resultado__mensaje{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+}
+.resultado .resultado_imagen{
+    margin-left: 25%;
+    margin-bottom: 32px;
+    width: 50%;
+    margin-top: 180px;
+     
+
+}
+   
+    
+.resultado .mensaje_notificacion{
+    color: #343A40;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    
+}
+.resultado .mensaje_ingresar{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.elemento_copiar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content:space-between;
+    width: 90%;
+}
+
+
+.resultado .texsalida{
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    border: 0;
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 3%;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.boton_copiar{
+    font-size: 16px;
+    font-weight: 400; 
+    font-family: "Inter", sans-serif;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    text-align: center; 
+    background-color: transparent;
+    margin-bottom: 8%;
+    height: 12.5%;
+}
+
+
+
+
+#textoSalida, #botonCopiar, #notificacion1,#mensajeingresar1,#notificacion2, #mensajeingresar2 {
+    display: none;
+}
+
+
+.footer{
+    grid-area: footer;
+    background: #0A3871;
+    width: 100%;
+	padding: 0.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+    
+
+.footer .texto-footer{
+    color: white;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    
+}
+.footer  #link{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 254, 254);
+    font-size: 0.9rem;
+}
+
+.footer #link:hover{
+    color: rgb(241, 211, 211);
+}
+
+@media(max-width:882px) {
+    .main{
+        
+        grid-template-areas: "logo        logo   "
+                         " principal   principal "
+                         " secundario   secundario"
+                         " resultado resultado"
+                         "footer footer";        
+                        
+    }
+    
+    
+    #principal .contenedor_texto{
+        margin-left: 40px;
+    }
+    #principal_secundario{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #principal_secundario .botones{
+        margin-bottom: 20px;
+        
+    }
+    #principal_secundario .botones .btn-encriptar {
+       
+        width: 50%;
+    }
+    #principal_secundario .botones .btn-desencriptar {
+     
+        width: 50%;
+
+    }
+    
+    .resultado{
+        height: 133px;
+        width: 89%;
+        margin-left: 6%;
+    }
+    .resultado img{
+        display: none;
+    }
+    .resultado__mensaje #notificacion {
+        display: none;
+
+    }
+    .resultado__mensaje  #notificacion1{
+        display: block;
+    }
+    .resultado__mensaje #mensajeingresar{
+        display: none;
+    }
+    .resultado__mensaje #mensajeingresar1{
+        display: block;
+    }
+    .resultado .resultado__mensaje #notificacion1{
+        margin-top: 30px;
+    } 
+    .logoalura{
+        padding-left: 0;
+
+    }
+   .elemento_copiar .boton_copiar{
+    margin-bottom: 0;
+   }
+    
+   
+}
+@media(max-width:500px) {
+    .main{
+        
+        grid-template-areas: "logo            "
+                         " principal    "
+                         " secundario   "
+                         " resultado "
+                         "footer";        
+    }
+    
+    #principal_secundario .botones {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #principal_secundario .botones .btn-encriptar {
+        width: 343px;
+       
+    }
+    #principal_secundario .botones .btn-desencriptar {
+        width: 343px;
+       
+   
+    } 
+    .resultado{
+        height: 186px;
+        
+    } 
+    .resultado .resultado__mensaje #notificacion2{
+        margin-top: 30px;
+    }  
+    .resultado__mensaje #notificacion1 {
+        display: none;
+
+    }
+    .resultado__mensaje  #notificacion2{
+        display: block;
+    }
+    .resultado__mensaje #mensajeingresar1{
+        display: none;
+
+    }
+    .resultado__mensaje #mensajeingresar2{
+        display: block;
+    }
+    .elemento_copiar .boton_copiar{
+        margin-bottom: 0;
+       }
+}

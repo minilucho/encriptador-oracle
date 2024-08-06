@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/509094c587.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main"> 
+        <header class="header" >  
+            <img src="./assets/Logo (1).png" alt="logo de alura" class="logoalura">
+        </header> 
+        
+        
+        <section id="principal">
+            <div class="contenedor_texto"> 
+              <textarea  id="texto" class="text-area"  placeholder="Ingrese el texto aquí" rows="10" cols=""></textarea> 
+              
+              
+            </div>   
+        </section> 
+         
+        <section id="principal_secundario">  
+           <div>
+                <h6 class="informacion">
+                    <img src="./assets/Vector.png" > Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">
+                <button  id="botonencriptar"   class="btn-encriptar">
+                    Encriptar
+                </button>
+                <button  id="botondesencriptar" class="btn-desencriptar">
+                    Desencriptar  
+                </button>
+            </div>
+        </section>
+        
+        <section  id="hola" class="resultado">
+            <div  id="resultado" class="resultado__mensaje">
+                <img  src="./assets/Muñeco.png" alt="foto" class="resultado_imagen">
+               <h3 id="notificacion" class="mensaje_notificacion">
+                Ningún mensaje fue <br> encontrado
+               </h3>
+               <h3 id="notificacion1" class="mensaje_notificacion">
+                Ningún mensaje fue encontrado 
+               </h3>
+               <h3 id="notificacion2" class="mensaje_notificacion">
+                Ningún mensaje fue  <br> encontrado 
+               </h3>
+               <p  id="mensajeingresar" class="mensaje_ingresar"> 
+                Ingresa el texto que desees encriptar o <br> desencriptar.
+               </p> 
+               <p  id="mensajeingresar1" class="mensaje_ingresar"> 
+                Ingresa el texto que desees encriptar o  desencriptar.
+               </p> 
+               <p  id="mensajeingresar2" class="mensaje_ingresar"> 
+                Ingresa el texto que desees <br> encriptar o  desencriptar.
+               </p> 
+               
+            </div>
+            <div class="elemento_copiar">
+                 <textarea id="textoSalida" class="texsalida" rows="" cols="" readonly></textarea>  
+            
+                <button id="botonCopiar" class="boton_copiar" >Copiar</button> 
+            </div> 
+        </section>
+        
+        <footer class="footer">
+             <h3 class="texto-footer">&copyDesarrollado por Alexis Villca</h3>
+             <a id="link" href="https://www.linkedin.com/in/alexis-villca" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedind</a>
+             <a id="link" href="https://github.com/minilucho/" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+        </footer>
+           
+                
+        
+    </main> 
+    <script src="./app.js"></script> 
+</body>
+</html>
